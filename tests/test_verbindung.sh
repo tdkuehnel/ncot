@@ -29,4 +29,4 @@ then
 fi
 
 # Knoten mit sshd starten.
-$SSHD -f etc/sshd_config_node01 -d -h $PWD/node01/.ssh/id_ed25519
+$SSHD -f node01/.ssh/sshd_config -d -h $PWD/node01/.ssh/id_ed25519
