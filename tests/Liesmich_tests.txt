@@ -1,0 +1,6 @@
+In diesem Verzeichnis befindet sich ein Test um ein virtuelles NCoT-Netzwerk über sshd und git aufzubauen. Virtuell deshalb, da die ncot-Knoten über verschiedene Ports auf der lokalen Netzwerkadresseabgebildet werden und nicht wie im realen Internet auf entfernten Maschinen mit eigenen IP-Adressen.
+
+Die verschiedenen sshd-Instanzen benutzern jeweils eine eigene stc/sshd_config-Datei, um sich voneinander abzugrenzen. Eine zentrale ssh_config Datei wird genutzt, um in git einheitliche remote-Namen verwenden zu können. Remotes sind im Test immer auf der selben lokalen IP-Adresse, aber auf unterschiedlichen Ports.
+
+Jede ncot-Node läuft in einem eigenen Verzeichnis.
+
