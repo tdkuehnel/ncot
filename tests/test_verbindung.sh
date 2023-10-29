@@ -3,8 +3,8 @@
 # Ausgabe nach stdout während der Skriptausführung.
 set -xv
 
-SSHD=/home/tdkuehnel/Projekte/src/openssh-portable-opt/sbin/sshd
-SSHKEYGEN=/home/tdkuehnel/Projekte/src/openssh-portable-opt/bin/ssh-keygen
+SSHD=$PWD/../openssh-portable-ncot/sbin/sshd
+SSHKEYGEN=$PWD/../openssh-portable-ncot/bin/ssh-keygen
 
 if [ ! -e "node01/.ssh/id_ed25519" ]
 then
