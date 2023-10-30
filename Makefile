@@ -17,6 +17,6 @@ openssh-portable-ncot:
 	cd openssh-portable-ncot ;\
 	git checkout V_9_5 ;\
 	autoreconf ;\
-	./configure --prefix=$$PWD ;\
+	./configure --prefix=$$PWD/build ;\
 	make ;\
 	make install
